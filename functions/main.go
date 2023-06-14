@@ -17,12 +17,13 @@ func subtraction(x int, z int) (simpleReturn int, formattedReturn string) {
 	return
 }
 
+
 func main() {
 	simpleReturnResult, formattedReturnResult := subtraction(12, 10)
 	fmt.Println(simpleReturnResult)
 	fmt.Println(formattedReturnResult)
-	fmt.Printf("O tipo de dado do formattedReturnResult é uma %T.", formattedReturnResult)
-
+	fmt.Printf("O tipo de dado do formattedReturnResult é uma %T.\n", formattedReturnResult)
+	fmt.Println(45_000_000)
 	// _, formattedReturnResult:= sum(12, 10)
 	// fmt.Println(simpleReturnResult)
 	// fmt.Println(formattedReturnResult)

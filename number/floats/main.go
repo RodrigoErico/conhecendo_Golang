@@ -9,6 +9,7 @@ func main() {
 	var height4 float64
 	var height5 float32 = 2.34
 	
+	
 	fmt.Printf("%.3f\n",height1)
 	fmt.Printf("%07.3f\n",height2) // 7 posiçoes.3 precisoes  001.890
 	fmt.Printf("%.1f\n",height2) // redondou para 1.9
