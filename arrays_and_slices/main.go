@@ -29,4 +29,20 @@ func main() {
 	fmt.Println(reflect.TypeOf(slice))
 	//fmt.Printf("%T", slice)
 
+	fmt.Println("---Arrays internos----")
+	// Arrays internos
+	sliceTwo := make([]float32, 10, 11)
+	fmt.Println(sliceTwo)
+	fmt.Println(len(sliceTwo)) // tamanho 10
+	fmt.Println(cap(sliceTwo)) // capacidade 11
+
+	sliceTwo = append(sliceTwo, 33)
+	sliceTwo = append(sliceTwo, 1) 
+	
+	// capacidade maxima é ultrapassada o go multiplica o tamanho.
+
+	fmt.Println(sliceTwo)
+	fmt.Println(len(sliceTwo)) // tamanho = 12
+	fmt.Println(cap(sliceTwo)) // capacidade = 24
+
 }
